@@ -1,7 +1,7 @@
 # Monkey's Trajectory Data Generation 
 
 ## Overview
-This Python script processes maze trial data stored in MATLAB `.mat` files, determining decision points based on the trajectory of subjects through the maze, which is filter at more than two directions that monkey can make, because we focus on analyzing monkey making  decison at branching point. 
+This Python script processes maze trial data stored in MATLAB `.mat` files, determining decision points based on the trajectory of subjects through the maze. The trajectory data  is filter at the current cells which have more than two directions that monkey can make, because we focus on analyzing monkey making decison at branching point. (refer the details at process_single_file function)
 
 ## Functions
 
