@@ -11,7 +11,7 @@ This Python script processes maze trial data stored in MATLAB `.mat` files, dete
 - **Output**: Returns `6` for a 6x6 maze or `7` for a 7x7 maze depending on whether the date is before or after March 18, 2021.
 
 ### `extract_binary_strings(mazewall)`
-- **Purpose**: Extracts binary strings representing the state of the maze walls from the given data structure. 1 represents did not has the wall (open path ) 0 represents has the wall.
+- **Purpose**: Extracts binary strings representing the state of the maze walls from the given data structure. 1 represents the current cell did not has the wall (open path ) 0 represents the current cell has the wall.
 - **Input**: Maze wall data structure from the `.mat` file. for e.g. mazewall = {
     'hidden': np.array([[[1, 0, 1, 1],
                          [0, 1, 1, 0],
