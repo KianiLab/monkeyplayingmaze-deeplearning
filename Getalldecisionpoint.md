@@ -1,7 +1,7 @@
 # Monkey's Trajectory Data Generation 
 
 ## Overview
-This Python script processes maze trial data stored in MATLAB `.mat` files, determining decision points based on the trajectory of subjects through the maze, which is filter at more than two directions that monkey made, because we focus on analyzing monkey making  decison at branching point. 
+This Python script processes maze trial data stored in MATLAB `.mat` files, determining decision points based on the trajectory of subjects through the maze. The trajectory data  is filter at the current cells which have more than two directions that monkey can make, because we focus on analyzing monkey making decison at branching point. (refer the details at process_single_file function)
 
 ## Functions
 
@@ -11,7 +11,7 @@ This Python script processes maze trial data stored in MATLAB `.mat` files, dete
 - **Output**: Returns `6` for a 6x6 maze or `7` for a 7x7 maze depending on whether the date is before or after March 18, 2021.
 
 ### `extract_binary_strings(mazewall)`
-- **Purpose**: Extracts binary strings representing the state of the maze walls from the given data structure.
+- **Purpose**: Extracts binary strings representing the state of the maze walls from the given data structure. 1 represents the current cell did not has the wall (open path ) 0 represents the current cell has the wall.
 - **Input**: Maze wall data structure from the `.mat` file. for e.g. mazewall = {
     'hidden': np.array([[[1, 0, 1, 1],
                          [0, 1, 1, 0],
