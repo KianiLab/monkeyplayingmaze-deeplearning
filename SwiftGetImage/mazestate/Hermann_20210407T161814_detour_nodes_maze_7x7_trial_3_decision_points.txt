@@ -1,0 +1,9 @@
+prev_x, prev_y,current_x,current_y,next_x,next_y,direction
+3,6,3,5,3,4,down
+3,4,3,5,2,5,left
+3,5,2,5,2,4,down
+2,5,2,4,2,3,down
+2,4,2,3,2,2,down
+2,3,2,2,3,2,right
+3,2,2,2,2,1,down
+2,2,2,1,2,0,down
